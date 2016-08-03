@@ -5,7 +5,7 @@ import random
 # possible O(n) runtime!
 def bogo_sort(arr):
 
-    def is_sorted(a): return all(a[i-1] < a[i] for i in range(1, len(a)))
+    def is_sorted(a): return all(a[i-1] <= a[i] for i in range(1, len(a)))
 
     while not is_sorted(arr):
         random.shuffle(arr)
