@@ -6,6 +6,9 @@ from insertionsort import insertion_sort
 from mergesort import merge_sort_init
 
 
+# arr: array to sort
+# method: a sorting function which takes one argument (arr)
+# print_output: boolean to print before/after of arr if so desired
 def test_sort(arr, method, print_output):
     print(method.__name__)
 
